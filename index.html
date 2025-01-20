@@ -1,0 +1,96 @@
+<!--
+Student Name: Anh Le
+Student UCSC email: mle288@ucsc.edu
+
+Notes to Grader:
+N/A
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a point (1)</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+      Please use the browser supporting "canvas".
+    </canvas>
+    <div>
+      <button type="button" id="clearButton">Clear</button>
+    </div>
+    <div>
+      <button type="button" id="drawPicture">
+        Draw A Vector Picture of Pidgeotto
+      </button>
+    </div>
+    <div>
+      <button type="button" id="pointDrawButton">Point</button>
+      <button type="button" id="TriangleDrawButton">Triangle</button>
+      <button type="button" id="circleDrawButton">Circle</button>
+    </div>
+    <p>
+      Number of Segments for Circle:
+      <input
+        class="slider"
+        id="segmentSlider"
+        type="range"
+        min="5"
+        max="100"
+        value="5"
+      />
+    </p>
+    <p>
+      Red:
+      <input
+        class="slider"
+        id="redSlider"
+        type="range"
+        min="0"
+        max="255"
+        value="0"
+      />
+    </p>
+    <p>
+      Green
+      <input
+        class="slider"
+        id="greenSlider"
+        type="range"
+        min="0"
+        max="255"
+        value="0"
+      />
+    </p>
+    <p>
+      Blue:
+      <input
+        class="slider"
+        id="blueSlider"
+        type="range"
+        min="0"
+        max="255"
+        value="0"
+      />
+    </p>
+    <p>
+      Size:
+      <input
+        class="slider"
+        id="sizeSlider"
+        type="range"
+        min="5"
+        max="50"
+        value="5"
+      />
+    </p>
+
+    <script src="./libs/webgl-utils.js"></script>
+    <script src="./libs/webgl-debug.js"></script>
+    <script src="./libs/cuon-utils.js"></script>
+    <script src="HelloPoint1.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+  </body>
+</html>
